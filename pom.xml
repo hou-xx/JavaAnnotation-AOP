@@ -12,6 +12,7 @@
 
     <modules>
         <module>java-annotation-core</module>
+        <module>java-annotation-test</module>
     </modules>
 
 </project>
