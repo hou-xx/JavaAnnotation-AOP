@@ -14,6 +14,9 @@
             <aop:pointcut id="springPointcut"
                 expression="@annotation(com.hxx.annotation.AnnotationDemo)" />
             <aop:around pointcut-ref="springPointcut" method="doAround" />
+            <aop:before pointcut-ref="springPointcut" method="doBefore" />
+            <aop:after pointcut-ref="springPointcut" method="doAfter" />
+            <aop:after-throwing pointcut-ref="springPointcut" method="afterThrowing" />
         </aop:aspect>
     </aop:config>
 </beans>

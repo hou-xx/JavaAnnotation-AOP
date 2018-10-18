@@ -19,7 +19,8 @@ public class ApiDemoImpl implements ApiDemo {
 
     @AnnotationDemo(time = 1, count = 2, name = "admin", userType = UserType.SYSTEM_ADMIN)
     public void work() {
-        System.out.println("ApiDemoImpl ---> work");
+        System.out.println("------->> ApiDemo work");
+        int a = 3/0;
     }
 
 }
