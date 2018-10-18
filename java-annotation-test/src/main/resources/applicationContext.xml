@@ -8,18 +8,5 @@
     <context:component-scan base-package="com.hxx" />
     <context:annotation-config />
     <aop:aspectj-autoproxy />
-    <bean id="springAspect" class="com.hxx.aop.SpringAspect"></bean>
-    <aop:config proxy-target-class="true">
-        <aop:aspect ref="springAspect">
-            <aop:pointcut id="springPointcut"
-                expression="@annotation(com.hxx.annotation.AnnotationDemo)" />
-            <aop:around pointcut-ref="springPointcut" method="doAround" />
-            <aop:before pointcut-ref="springPointcut" method="doBefore" />
-            <aop:after pointcut-ref="springPointcut" method="doAfter" />
-            <aop:after-throwing pointcut-ref="springPointcut" method="afterThrowing"
-                throwing="throwable" />
-            <aop:after-returning pointcut-ref="springPointcut" method="afterReturning"
-                returning="returnValue" />
-        </aop:aspect>
-    </aop:config>
+    <import resource="applicationContext-aop.xml" />
 </beans>

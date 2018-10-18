@@ -14,14 +14,13 @@ import org.aspectj.lang.reflect.MethodSignature;
  * </ul>
  */
 public class SpringAspect {
-
     /**
      * 被注解方法执行前执行的方法
      *
      * @param point
      */
     public void doBefore(JoinPoint point) {
-        System.out.println("---------------> before");
+        System.out.println("---------------> before ");
     }
 
     /**
