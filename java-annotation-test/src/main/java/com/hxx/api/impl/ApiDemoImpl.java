@@ -6,6 +6,8 @@ import com.hxx.enums.UserType;
 
 import org.springframework.stereotype.Service;
 
+import java.util.InputMismatchException;
+
 /**
  * <ul>
  * <li>功能说明：</li>
@@ -18,9 +20,9 @@ import org.springframework.stereotype.Service;
 public class ApiDemoImpl implements ApiDemo {
 
     @AnnotationDemo(time = 1, count = 2, name = "admin", userType = UserType.SYSTEM_ADMIN)
-    public void work() {
+    public int work(int input) {
         System.out.println("------->> ApiDemo work");
-        int a = 3/0;
+        return 3 / input;
     }
 
 }

@@ -58,8 +58,12 @@ public class SpringAspect {
      *
      * @param point
      */
-    public void afterThrowing(JoinPoint point,Throwable throwable) {
+    public void afterThrowing(JoinPoint point, Throwable throwable) {
         System.out.println("---------------> afterThrowing");
         System.out.println(throwable.getMessage());
+    }
+
+    public void afterReturning(JoinPoint point, int returnValue) {
+        System.out.println("---------------> afterReturning +++ " + returnValue);
     }
 }

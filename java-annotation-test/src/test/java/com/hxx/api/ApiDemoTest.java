@@ -22,7 +22,7 @@ public class ApiDemoTest {
 
     @Test
     public void testWork() throws Exception {
-        apiDemo.work();
+        apiDemo.work(0);
     }
 
 

@@ -9,5 +9,5 @@ package com.hxx.api;
  */
 
 public interface ApiDemo {
-    void work();
+    int work(int input);
 }
