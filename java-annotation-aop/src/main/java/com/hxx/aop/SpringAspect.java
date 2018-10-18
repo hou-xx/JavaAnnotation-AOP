@@ -23,17 +23,12 @@ public class SpringAspect {
         System.out.println("---------------> before ");
     }
 
-    /**
-     * @param point
-     * @return
-     * @throws Throwable
-     */
     public Object doAround(ProceedingJoinPoint point) throws Throwable {
         System.out.println("---------------> around start");
         MethodSignature methodSignature = (MethodSignature) point.getSignature();
         AnnotationDemo annotation = methodSignature.getMethod().getAnnotation(AnnotationDemo.class);
         System.out.println("annotation ---------------> " + annotation);
-        Object proceed = null;
+        Object proceed = 0;
         try {
             proceed = point.proceed();
         } catch (Throwable throwable) {
@@ -62,6 +57,10 @@ public class SpringAspect {
         System.out.println(throwable.getMessage());
     }
 
+    /**
+     * @param point
+     * @param returnValue
+     */
     public void afterReturning(JoinPoint point, int returnValue) {
         System.out.println("---------------> afterReturning +++ " + returnValue);
     }

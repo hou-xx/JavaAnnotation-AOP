@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.annotation.Resource;
 
 /**
- * ApiDemoImpl Tester.
+ * ApiDemo Tester.
  *
  * @author <Authors name>
  * @version 1.0
@@ -22,6 +22,11 @@ public class ApiDemoTest {
 
     @Test
     public void testWork() throws Exception {
+        apiDemo.work(1);
+    }
+
+    @Test
+    public void testWorkException() throws Exception {
         apiDemo.work(0);
     }
 

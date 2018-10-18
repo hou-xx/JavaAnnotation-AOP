@@ -6,7 +6,7 @@
 
     <bean id="springAspect" class="com.hxx.aop.SpringAspect" />
     <aop:config proxy-target-class="true">
-        <aop:aspect ref="springAspect">
+        <aop:aspect ref="springAspect"  order="1">
             <aop:pointcut id="springPointcut"
                 expression="@annotation(com.hxx.annotation.AnnotationDemo)" />
             <aop:around pointcut-ref="springPointcut" method="doAround" />
