@@ -38,7 +38,7 @@ public class SpringAspect {
         try {
             proceed = point.proceed();
         } catch (Throwable throwable) {
-//            throw throwable;
+            throw throwable;
         }
         System.out.println("---------------> around end");
         return proceed;
@@ -58,9 +58,8 @@ public class SpringAspect {
      *
      * @param point
      */
-    public void afterThrowing(JoinPoint point) {
+    public void afterThrowing(JoinPoint point,Throwable throwable) {
         System.out.println("---------------> afterThrowing");
-//        String methodName = joinPoint.getSignature().getName();
-//        System.out.println(this.getClass().getSimpleName() + " afterThrowing execute, exception:" + exception);
+        System.out.println(throwable.getMessage());
     }
 }

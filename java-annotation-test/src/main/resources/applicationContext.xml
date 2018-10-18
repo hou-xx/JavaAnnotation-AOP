@@ -16,7 +16,7 @@
             <aop:around pointcut-ref="springPointcut" method="doAround" />
             <aop:before pointcut-ref="springPointcut" method="doBefore" />
             <aop:after pointcut-ref="springPointcut" method="doAfter" />
-            <aop:after-throwing pointcut-ref="springPointcut" method="afterThrowing" />
+            <aop:after-throwing pointcut-ref="springPointcut" method="afterThrowing" throwing="throwable"/>
         </aop:aspect>
     </aop:config>
 </beans>
