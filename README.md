@@ -6,5 +6,5 @@
 
 
 
-[1]:https://github.com/hou-xx/JavaAnnotation-AOP/blob/master/java-annotation.md
-[2]: https://github.com/hou-xx/JavaAnnotation-AOP/blob/master/java-aop-1.md
+[1]: https://hou-xx.github.io/JavaAnnotation-AOP/java-annotation.html
+[2]: https://hou-xx.github.io/JavaAnnotation-AOP/java-aop-1.html
