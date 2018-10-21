@@ -30,5 +30,14 @@ public class ApiDemoTest {
         apiDemo.work(0);
     }
 
+    @Test
+    public void testWorkTwo() throws Exception {
+        apiDemo.workTwo(4);
+    }
+
+    @Test
+    public void testWorkTwoException() throws Exception {
+        apiDemo.workTwo(0);
+    }
 
 } 

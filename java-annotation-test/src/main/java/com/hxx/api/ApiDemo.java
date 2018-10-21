@@ -16,4 +16,12 @@ public interface ApiDemo {
      * @return 输出
      */
     int work(int input);
+
+    /**
+     * 模拟业务方法定义2
+     *
+     * @param input 输入
+     * @return 输出
+     */
+    int workTwo(int input);
 }
