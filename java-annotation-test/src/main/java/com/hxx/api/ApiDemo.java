@@ -10,7 +10,7 @@ package com.hxx.api;
 
 public interface ApiDemo {
     /**
-     * 模拟业务方法定义
+     * 模拟业务方法定义1
      *
      * @param input 输入
      * @return 输出

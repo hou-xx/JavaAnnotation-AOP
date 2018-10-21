@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * <ul>
- * <li>功能说明：</li>
+ * <li>功能说明：使用 aspactj 注解方式实现 AOP </li>
  * <li>作者：tal on 2018/10/17 0017 17:20 </li>
  * <li>邮箱：houxiangxiang@cibfintech.com</li>
  * </ul>
@@ -49,7 +49,7 @@ public class AnnotationAspect {
         try {
             proceed = point.proceed();
         } catch (Throwable throwable) {
-            throw throwable;
+//            throw throwable;
         }
         System.out.println("---------------> around end");
         return proceed;
